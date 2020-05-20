@@ -14,8 +14,8 @@
     width: 1440px;
     margin: 0 auto;
 }
-body,html{
-   height: 100vh;
+body{
+    height: 100%;
    background-color: hsl(257, 40%, 49%);
    background-image: linear-gradient(hsla(282, 93%, 57%,0.1),hsla(282, 93%, 57%,0.1)
     ),url('../images/bg-desktop.svg');
@@ -38,12 +38,11 @@ header{
 .content .box{
     flex: 1;
     margin-top: 30px;
-    
-  
-
-
 }
-
+.box img{
+    width: 90%;
+    margin-left: 30px;
+}
 .content .box2{
     flex: 1;
     padding: 5%;
@@ -115,10 +114,10 @@ text-decoration: none;
 
 
 /* Responsive */
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1200px){
 
         body{
-            background-size: contain;
+            background-size: cover;
 
         }
    
@@ -138,7 +137,7 @@ text-decoration: none;
         
     .box img{
         padding: 30px;
-        width: 100%;
+        width: 90%;
     }
 
         .box2 h2{
@@ -170,7 +169,7 @@ text-decoration: none;
 }
 
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 767px){
 
    
 
@@ -185,7 +184,7 @@ text-decoration: none;
 
     .box img{
         padding: 30px;
-        width: 100%;
+        width: 90%;
     }
 
         .box2 h2{
